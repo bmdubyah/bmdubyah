@@ -496,7 +496,7 @@ From there, you could use scp to download it to a local machine to take a look a
 czifpiaseh@grades.elfu.org's password:
 TERM environment variable not set.
 \033[36m===================================================\033[0m
-88665a561824:~ wibrya$ TERM environment variable not set.
+88665a561824:~ bryan$ TERM environment variable not set.
 {% endhighlight %}
 
 To fix this, I reset the shell on the grades host for my user
