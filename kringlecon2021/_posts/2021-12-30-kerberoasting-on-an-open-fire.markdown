@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kerberoasting on an Open Fire"
+title:  "8 - Kerberoasting on an Open Fire"
 date:   2021-12-30 01:34:39 -0800
 categories: kringlecon2021 objective8
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Yara Analysis"
+title:  "Terminal Challenge - Yara Analysis"
 date:   2021-12-31 01:34:39 -0800
 categories: kringlecon2021 terminal
 ---
