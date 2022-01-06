@@ -2,7 +2,7 @@
 layout: post
 title:  "12 - Frost Tower Website Checkup"
 date:   2022-01-02 01:34:39 -0800
-categories: kringlecon2021 objective12
+categories: kringlecon2021 objective12 main
 ---
 
 This is challenge number 12 in the 2021 SANS Holiday Hack Challenge (https://2021.kringlecon.com/). Objective:

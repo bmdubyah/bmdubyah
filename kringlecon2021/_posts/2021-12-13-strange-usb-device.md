@@ -2,7 +2,7 @@
 layout: post
 title:  "5 - Strange USB Device"
 date:   2021-12-13 02:00:39 -0800
-categories: kringlecon2021 objective5
+categories: kringlecon2021 objective5 main
 ---
 
 This is challenge number 5 in the 2021 SANS Holiday Hack Challenge (https://2021.kringlecon.com/). Objective:

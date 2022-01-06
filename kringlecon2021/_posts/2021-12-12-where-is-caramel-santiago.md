@@ -2,7 +2,7 @@
 layout: post
 title:  "2 - Where in the World is Caramel Santaigo?"
 date:   2021-12-12 01:33:39 -0800
-categories: kringlecon2021 objective2
+categories: kringlecon2021 objective2 main
 ---
 
 This is challenge number 2 in the 2021 SANS Holiday Hack Challenge (https://2021.kringlecon.com/). Objective:

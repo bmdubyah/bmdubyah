@@ -2,7 +2,7 @@
 layout: post
 title:  "6 - Shellcode Primer"
 date:   2021-12-15 02:00:39 -0800
-categories: kringlecon2021 objective6
+categories: kringlecon2021 objective6 main
 ---
 
 This is challenge number 6 in the 2021 SANS Holiday Hack Challenge (https://2021.kringlecon.com/). Objective:

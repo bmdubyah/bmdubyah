@@ -2,7 +2,7 @@
 layout: post
 title:  "4 - Slot Machine Investigation"
 date:   2021-12-13 01:34:39 -0800
-categories: kringlecon2021 objective4
+categories: kringlecon2021 objective4 main
 ---
 
 This is challenge number 4 in the 2021 SANS Holiday Hack Challenge (https://2021.kringlecon.com/). Objective:

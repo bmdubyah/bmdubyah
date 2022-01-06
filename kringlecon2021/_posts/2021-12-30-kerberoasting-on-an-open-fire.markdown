@@ -2,7 +2,7 @@
 layout: post
 title:  "8 - Kerberoasting on an Open Fire"
 date:   2021-12-30 01:34:39 -0800
-categories: kringlecon2021 objective8
+categories: kringlecon2021 objective8 main
 ---
 This is challenge number 8 in the 2021 SANS Holiday Hack Challenge (https://2021.kringlecon.com/). Objective:
 

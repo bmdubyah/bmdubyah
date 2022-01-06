@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "KringleCon 2021" }}</h2>
+    <ul class="post-list">
+      <h3>{{ page.list_title | default: "Objective Challenges" }}</h3>
+      {% assign sorted-posts = site.posts | where: "categories","main" %}
+      {% assign date_sorted = sorted-posts | sort: 'date' %}
+      {%- for post in date_sorted -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <ul class="post-list">
+      <h3>{{ page.list_title | default: "Terminal Challenges" }}</h3>
+      {% assign sorted-posts = site.posts | where: "categories","terminal" %}
+      {%- for post in sorted-posts -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+
+  {%- endif -%}
+
+</div>

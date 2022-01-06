@@ -2,7 +2,7 @@
 layout: post
 title:  "3 - Thaw Frost Tower's Entrance"
 date:   2021-12-12 01:34:39 -0800
-categories: kringlecon2021 objective3
+categories: kringlecon2021 objective3 main
 ---
 
 This is challenge number 3 in the 2021 SANS Holiday Hack Challenge (https://2021.kringlecon.com/). Objective:
