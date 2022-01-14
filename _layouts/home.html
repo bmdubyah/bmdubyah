@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="/assets/css/summary.css">
 
 <div class="home">
   {%- if page.title -%}
@@ -9,17 +10,19 @@ layout: default
 
   {{ content }}
 
+<details>
+  <summary><h2 class="post-list-heading">{{ page.list_title | default: "KringleCon 2021" }}</h2></summary>
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "KringleCon 2021" }}</h2>
-    <ul class="post-list">
-      <h3>{{ page.list_title | default: "Objective Challenges" }}</h3>
+  <details>
+     <summary><b> {{ page.list_title | default: "Objective Challenges" }}</b></summary>
+    <ul class="post-list-override">
       {% assign sorted-posts = site.posts | where: "categories","main" %}
       {% assign date_sorted = sorted-posts | sort: 'date' %}
       {%- for post in date_sorted -%}
       <li>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+           {{ post.title | escape }}
           </a>
         </h3>
         {%- if site.show_excerpts -%}
@@ -28,9 +31,10 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
-    <ul class="post-list">
-      <h3>{{ page.list_title | default: "Terminal Challenges" }}</h3>
+</details>
+<details>
+  <summary><b>{{ page.list_title | default: "Terminal Challenges" }}</b></summary>
+    <ul class="post-list-override">
       {% assign sorted-posts = site.posts | where: "categories","terminal" %}
       {%- for post in sorted-posts -%}
       <li>
@@ -46,7 +50,8 @@ layout: default
       {%- endfor -%}
     </ul>
 
-
+</details>
   {%- endif -%}
+</details>
 
 </div>

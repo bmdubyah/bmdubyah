@@ -1,0 +1,22 @@
+/* Styling the Disclosure Widgets */
+
+details > summary {
+  background-color: #F5F5F5;
+  cursor: pointer;
+  padding: .5rem 1rem;
+}
+
+details > summary > * {
+  display: inline;
+}
+
+details > *:not(summary){
+  margin-left: 0.5em;
+}
+
+.post-list-override { margin-left: 0; list-style: none; }
+.post-list-override > li { margin-bottom: 30px; }
+
+.post-list-override {
+  padding-left: 1.5em;
+}
