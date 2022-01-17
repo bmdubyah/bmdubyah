@@ -54,4 +54,27 @@ layout: default
   {%- endif -%}
 </details>
 
+<details>
+  <summary><h2 class="post-list-heading">{{ page.list_title | default: "sdr" }}</h2></summary>
+  {%- if site.posts.size > 0 -%}
+  <details>
+    <summary><b> {{ page.list_title | default: "hackrf" }}</b></summary>
+    <ul class="post-list-override">
+    {% assign sdr-posts = site.posts | where: "categories","hackrf" %}
+      {%- for sdr_post in sdr-posts -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ sdr_post.url | relative_url }}">
+           {{ sdr_post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ sdr_post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </details>
+    {%- endif -%}
+</details>
 </div>
